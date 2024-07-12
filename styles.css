@@ -57,11 +57,9 @@ body {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 1.125rem;
   max-width: 300px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .card.google {
@@ -72,11 +70,39 @@ body {
   align-self: flex-start;
 }
 
+@media screen and (max-width: 640px) {
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .page {
+    flex-direction: column;
+  }
+  .card.google {
+    align-self: flex-end;
+  }
+  .card.meta {
+    align-self: flex-start;
+  }
+}
+
 .review {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.comment {
+  font-size: 1rem;
+}
+
 .logo {
   width: 5rem;
 }
