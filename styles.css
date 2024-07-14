@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 body {
   padding: 0;
   margin: 0;
   background-color: #fafaf9;
+  font-family: 'Sora', sans-serif;
 }
 
 .page {
   display: flex;
   padding: 10rem 5rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .left-side {
@@ -20,12 +23,15 @@ body {
 
 .description {
   font-size: 1.25rem;
+  color: #52525a;
+  margin-bottom: 2rem;
 }
 
 .icon-start {
   background-color: #f5c044;
-  padding: 10px;
+  padding: 0.6rem 0.8rem;
   border-radius: 50%;
+  font-size: 1.5rem;
 }
 
 .review-list {
@@ -36,20 +42,21 @@ body {
   gap: 1rem;
 }
 
-.icon-checked {
-  padding: 1px;
-  background-color: #4ca154;
-  border-radius: 50%;
+.review-item {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 }
 
 .text {
   font-size: 0.875rem;
+  color: #52525a;
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2rem;
   width: 50%;
 }
 
@@ -57,9 +64,13 @@ body {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.125rem;
-  max-width: 300px;
+  padding: 1.5rem 2rem;
+  max-width: 20rem;
+  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .card.google {
@@ -101,6 +112,8 @@ body {
 
 .comment {
   font-size: 1rem;
+  color: #52525a;
+  margin: 0;
 }
 
 .logo {
